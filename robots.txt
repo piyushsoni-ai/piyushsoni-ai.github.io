@@ -1,0 +1,6 @@
+# Search engines and AI crawlers are welcome.
+User-agent: *
+Allow: /
+Disallow: /_build/
+
+Sitemap: https://piyushsoni-ai.github.io/sitemap.xml

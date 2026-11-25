@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Case study: designing SnapLife AI | Piyush Kumar Soni</title>
+<meta name="description" content="Product idea, multimodal AI architecture, model fallback, database, PWA and privacy decisions behind SnapLife AI, a private product by Piyush Kumar Soni.">
+<meta name="author" content="Piyush Kumar Soni">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://piyushsoni-ai.github.io/case-studies/snaplife-ai/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Piyush Kumar Soni">
+<meta property="og:title" content="Case study: designing SnapLife AI | Piyush Kumar Soni">
+<meta property="og:description" content="Product idea, multimodal AI architecture, model fallback, database, PWA and privacy decisions behind SnapLife AI, a private product by Piyush Kumar Soni.">
+<meta property="og:url" content="https://piyushsoni-ai.github.io/case-studies/snaplife-ai/">
+<meta property="og:image" content="https://piyushsoni-ai.github.io/assets/img/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Piyush Kumar Soni, SEO & AI Search Leader">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Case study: designing SnapLife AI | Piyush Kumar Soni">
+<meta name="twitter:description" content="Product idea, multimodal AI architecture, model fallback, database, PWA and privacy decisions behind SnapLife AI, a private product by Piyush Kumar Soni.">
+<meta name="twitter:image" content="https://piyushsoni-ai.github.io/assets/img/og-default.png">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://piyushsoni-ai.github.io/case-studies/snaplife-ai/#webpage",
+   "url": "https://piyushsoni-ai.github.io/case-studies/snaplife-ai/",
+   "name": "Case study: designing SnapLife AI | Piyush Kumar Soni",
+   "description": "Product idea, multimodal AI architecture, model fallback, database, PWA and privacy decisions behind SnapLife AI, a private product by Piyush Kumar Soni.",
+   "isPartOf": {
+    "@id": "https://piyushsoni-ai.github.io/#website"
+   },
+   "about": {
+    "@id": "https://piyushsoni-ai.github.io/#person"
+   },
+   "inLanguage": "en",
+   "breadcrumb": {
+    "@id": "https://piyushsoni-ai.github.io/case-studies/snaplife-ai/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://piyushsoni-ai.github.io/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Case studies",
+     "item": "https://piyushsoni-ai.github.io/case-studies/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Designing SnapLife AI: one photo, three everyday decisions",
+     "item": "https://piyushsoni-ai.github.io/case-studies/snaplife-ai/"
+    }
+   ],
+   "@id": "https://piyushsoni-ai.github.io/case-studies/snaplife-ai/#breadcrumb"
+  }
+ ]
+}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="/">Piyush Kumar Soni<span class="dot" aria-hidden="true">.</span></a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links"><span class="label">Menu</span></button>
+      <ul class="nav-links" id="nav-links"><li><a href="/">Home</a></li><li><a href="/about/">About</a></li><li><a href="/expertise/">Expertise</a></li><li><a href="/#results">Results</a></li><li><a href="/projects/">Projects</a></li><li><a href="/case-studies/" aria-current="page">Case studies</a></li><li><a href="/writing/">Writing</a></li><li><a href="/resume/">Resume</a></li><li><a href="/contact/">Contact</a></li></ul>
+      <span class="nav-cta"><a class="btn btn-sm" href="/resume/#download" data-track="resume-view">Download resume</a></span>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<div class="page-head"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/case-studies/">Case studies</a></li><li aria-current="page">Designing SnapLife AI: one photo, three everyday decisions</li></ol></nav><span class="eyebrow">Case study</span><h1>Designing SnapLife AI: one photo, three everyday decisions</h1><p class="lede">SnapLife AI started from a simple observation: a photo carries most of the information people otherwise type into three different apps. This is how the product and architecture are being shaped.</p></div></div>
+<div class="wrap layout">
+  <article class="prose"><h2>Product idea</h2><p>Three daily decisions, one input. Photograph the fridge and get recipes. Photograph the wardrobe and get outfits. Photograph a receipt and see spending organized. The value grows over time, because the app remembers your wardrobe, what you cook and where your money goes.</p><h2>Multimodal input</h2><p>Every mode starts with an image. A vision-capable model extracts structured data, such as ingredients, clothing items with colour and type, or receipt line items. That structured data, not the raw image, drives suggestions. This keeps prompts small and makes results easier to check.</p><h2>AI architecture and model fallback</h2><p>Gemini 2.0 Flash is the primary model because it handles images quickly at low cost. Groq running Llama 4 Scout is the fallback when the primary is slow, rate-limited or unavailable. Suggestions should never fail just because one provider has a bad hour.</p><h2>Database</h2><p>Supabase provides PostgreSQL, auth, storage and edge functions in one place. pgvector stores embeddings so the app can find similar wardrobe items or recipes a user has liked before. Plan limits, credits and pricing live in a settings table, so they can change from an admin dashboard without a code release.</p><h2>PWA first</h2><p>The first release is a Next.js 14 progressive web app with the App Router and Tailwind CSS. A PWA can be installed on a phone, opens the camera directly and avoids app store delays while the product is still being shaped. The code lives in a pnpm and Turborepo monorepo so a native app can share the same backend later.</p><h2>Privacy considerations</h2><p>Wardrobe mode can use a body photo for fit suggestions, and that needs consent. Users choose to store the photo or have it scanned once and discarded, or they can pick a body type without uploading anything. Receipts and fridge photos are handled with the same principle: keep only what the feature needs.</p><h2>Product decisions</h2><ul><li>One app with three modes, instead of three apps</li><li>Free plan with monthly credits, plus a single Pro plan</li><li>Payments through Razorpay for Indian users</li><li>Admin-editable pricing and limits</li></ul><h2>Status</h2><div class="callout"><strong>SnapLife AI is a private project in development.</strong> The source repository is private and the product has not launched.</div></article>
+  <aside class="aside" aria-label="Related">
+    <div class="card"><h2>Related project</h2><p class="small"><a href="/projects/snaplife-ai/">SnapLife AI</a></p><p class="small muted" style="margin:0">Private project · in development</p></div>
+    <div class="card"><h2>More case studies</h2><ul class="small"><li><a href="/case-studies/global-seo-ai-growth/">211K clicks, 10.5M impressions &amp; growing AI Search visibility</a></li><li><a href="/case-studies/gbp-ai-visibility/">Building a GBP + AI visibility audit workflow</a></li><li><a href="/case-studies/seo-master-skill/">Building SEO Master Skill for AI-assisted search workflows</a></li></ul></div>
+    <div class="card"><h2>Work with me</h2><p class="small">Open to SEO leadership and AI Search roles.</p><a href="https://www.linkedin.com/in/piyushkumarsoni/" class="btn btn-sm" target="_blank" rel="noopener" data-track="linkedin-case">Connect on LinkedIn<span class="sr-only"> (opens in a new tab)</span></a></div>
+  </aside>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <p class="name">Piyush Kumar Soni</p>
+        <p class="tag">SEO &amp; AI Search Leader | Technical SEO · GEO/AEO · LLM/RAG · Automation</p>
+        <p class="tag">SEO, web and digital growth since 2011.</p>
+      </div>
+      <nav aria-label="Profiles"><ul class="footer-links"><li><a href="https://www.linkedin.com/in/piyushkumarsoni/" target="_blank" rel="noopener" data-track="footer-linkedin">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a></li><li><a href="https://github.com/piyushsoni-ai" target="_blank" rel="noopener" data-track="footer-github">GitHub<span class="sr-only"> (opens in a new tab)</span></a></li><li><a href="https://medium.com/@piyushkrsoni" target="_blank" rel="noopener" data-track="footer-medium">Medium<span class="sr-only"> (opens in a new tab)</span></a></li><li><a href="https://piyushkumarsoni.substack.com/" target="_blank" rel="noopener" data-track="footer-substack">Substack<span class="sr-only"> (opens in a new tab)</span></a></li><li><a href="https://dev.to/piyush_kumar_soni" target="_blank" rel="noopener" data-track="footer-devto">DEV.to<span class="sr-only"> (opens in a new tab)</span></a></li></ul></nav>
+    </div>
+    <p class="copy">© <span id="year">2026</span> Piyush Kumar Soni. Kanpur, Uttar Pradesh, India.</p>
+  </div>
+</footer>
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>
